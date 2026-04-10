@@ -1,0 +1,11 @@
+self.assertEqual(add(2, 3), 5)   # ✅ correctself.assertEqual(add(2, 3), 5)  
+import unittest
+from calculator import add
+
+class TestCalculator(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(add(2, 3), 5)   # ❌ correct bug
+
+if __name__ == '__main__':
+    unittest.main()
